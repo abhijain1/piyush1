@@ -1,0 +1,42 @@
+/* Reset some default styles for the page */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Create a container to hold the image and text */
+.container {
+    position: relative;
+    max-width: 100%;
+}
+
+/* Style the image to fill the container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style the overlay text */
+.overlay-text {
+    position: absolute;
+    top: 60%; /* Adjusted downward from 50% */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    padding: 30px; /* Slightly larger padding */
+    color: #fff; /* Text color */
+    border-radius: 10px; /* Rounded corners for the overlay */
+    width: 80%; /* Slightly wider text box */
+}
+
+/* Style the heading and paragraph inside the overlay text */
+.overlay-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 18px;
+}
